@@ -9,6 +9,6 @@ public class HelloWorldController {
 
     @GetMapping(value = "/dockerDemo")
     public String helloWorld(){
-        return " CI demo now";
+        return " CI demo now to demo ci";
     }
 }
