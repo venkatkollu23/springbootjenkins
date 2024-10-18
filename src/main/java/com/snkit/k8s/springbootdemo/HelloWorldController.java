@@ -9,6 +9,6 @@ public class HelloWorldController {
 
     @GetMapping(value = "/dockerDemo")
     public String helloWorld(){
-        return " CI test Post Dasara First demo on Minikube CI CD with webhook  test";
+        return " CI TEst";
     }
 }
