@@ -21,7 +21,7 @@ public class HelloWorld {
 
             // manage hook flag enabled
 
-            // admin-org-hookscope test poll enabled test test
+            // admin-org-hookscope test poll enabled test test test
 
         }catch (Exception e) {
 
