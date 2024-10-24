@@ -19,7 +19,7 @@ public class HelloWorld {
 
             // manage hook flag enabled
 
-            // admin-org-hookscope
+            // admin-org-hookscope test
 
         }catch (Exception e) {
 
