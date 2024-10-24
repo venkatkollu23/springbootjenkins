@@ -19,6 +19,8 @@ public class HelloWorld {
 
             // manage hook flag enabled
 
+            // admin-org-hookscope
+
         }catch (Exception e) {
 
         }
