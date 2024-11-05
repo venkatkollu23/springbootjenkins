@@ -1,4 +1,4 @@
-package com.snkit.k8s.springbootdemo;
+package com.neo.workshop;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

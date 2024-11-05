@@ -1,4 +1,4 @@
-package com.snkit.k8s.springbootdemo;
+package com.neo.workshop;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,6 +9,8 @@ public class HelloWorldController {
 
     @GetMapping(value = "/dockerDemo")
     public String helloWorld(){
+
+
         return " CI demo now to demo ci";
     }
 }

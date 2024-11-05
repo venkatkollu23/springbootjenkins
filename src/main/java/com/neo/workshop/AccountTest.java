@@ -6,7 +6,7 @@ public class AccountTest {
 
 
     public static void main(String[] args){
-
+        ProtectedConstructor protectedConstructor = new ProtectedConstructor();
 
         Account accountNoArugumentConstructor = new Account();
 

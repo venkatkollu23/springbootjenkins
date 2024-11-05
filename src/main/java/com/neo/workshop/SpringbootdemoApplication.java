@@ -1,4 +1,4 @@
-package com.snkit.k8s.springbootdemo;
+package com.neo.workshop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

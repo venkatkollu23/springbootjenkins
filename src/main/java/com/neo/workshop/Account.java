@@ -5,6 +5,16 @@ import java.util.Date;
 
 public class Account {
 
+
+    {
+        System.out.println(" from normal block ");
+    }
+    static  {
+        System.out.println(" from static block ");
+    }
+
+
+
     public String accountNumber;
     public String accountHolderName;
     public String adhar;
@@ -37,6 +47,7 @@ public class Account {
 
 
     public Account(){
+        System.out.println(" from no argument constructor");
     }
 
     public Account( String accountHolderName,
