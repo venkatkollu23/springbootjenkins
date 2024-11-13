@@ -1,14 +1,15 @@
-package com.neo.workshop.polymorphism.abstractdemo;
+package com.neo.workshop.poliy.customcheckedexception;
 
+import com.neo.workshop.poliy.customcheckedexception.enumdemo.TransferEnum;
+import com.neo.workshop.poliy.customcheckedexception.exceptions.InsufficientBalanceException;
 import com.neo.workshop.polymorphism.Payment;
 import com.neo.workshop.polymorphism.PaymentStatusEnum;
 
-import java.util.*;
-import java.util.function.BiPredicate;
+import java.util.Date;
+import java.util.UUID;
 import java.util.function.Function;
-import java.util.function.Supplier;
 
-public abstract  class SbiTransferService  implements RBIPayment{
+public abstract  class SbiTransferService  implements RBIPayment {
 
 
 
@@ -42,7 +43,7 @@ public abstract  class SbiTransferService  implements RBIPayment{
 
     // if class marked as a abstract there is no rule to have a abstract method
 
-Function<Double,Payment> errorSupplier = (amount) -> {
+Function<Double, Payment> errorSupplier = (amount) -> {
     Payment p = new Payment();
     p.setStatus(PaymentStatusEnum.FAILED.getLabel());
     p.setTransactionId(UUID.randomUUID().toString());
@@ -51,10 +52,10 @@ Function<Double,Payment> errorSupplier = (amount) -> {
     p.setAmount(amount);
     return  p;
 };
-    protected abstract boolean transactionLimitCheck(Account account,Double amount);
+    protected abstract boolean transactionLimitCheck(Account account, Double amount);
 
     @Override
-    public Payment transfer(String fromAccount, String toAccount, Double amount) {
+    public Payment transfer(String fromAccount, String toAccount, Double amount) throws InsufficientBalanceException {
         Payment p = new Payment();
     // balance check
         if (this.balanceCheck(fromAccount,amount)) {
@@ -69,6 +70,9 @@ Function<Double,Payment> errorSupplier = (amount) -> {
 
             }
 
+        }else {
+            throw  new InsufficientBalanceException
+                    (TransferEnum.INSUFFICIENT_BALANCE.getCode(),TransferEnum.INSUFFICIENT_BALANCE.getLabel());
         }
 
         if (true){

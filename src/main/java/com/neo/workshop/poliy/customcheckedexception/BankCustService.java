@@ -1,4 +1,4 @@
-package com.neo.workshop.polymorphism.abstractdemo;
+package com.neo.workshop.poliy.customcheckedexception;
 
 import com.neo.workshop.polymorphism.Payment;
 import com.neo.workshop.polymorphism.factorydesign.AccountFactory;
@@ -33,9 +33,9 @@ System.out.println(" NEFT Payment status "+payment.getStatus());
         System.out.println(" RTGS Payment status "+rtgspayment.getStatus());*/
         TaxServiceImpl.addAccountToTax(account);
         SbiTransferService pensionTaxsbiTransferService  = new PensionTaxTransferServiceImpl();
-        Payment pensionTaxpayment =  pensionTaxsbiTransferService.transfer(account.getAccount(),"HDFC123",20100.0);
+     //   Payment pensionTaxpayment =  pensionTaxsbiTransferService.transfer(account.getAccount(),"HDFC123",20100.0);
 
-        System.out.println(" Pension Tax  Payment status "+pensionTaxpayment.getStatus());
+      //  System.out.println(" Pension Tax  Payment status "+pensionTaxpayment.getStatus());
 
     }
 }
