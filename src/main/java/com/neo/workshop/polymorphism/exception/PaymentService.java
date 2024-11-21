@@ -12,7 +12,8 @@ public class PaymentService {
         try {
 
             if (numberOfTickets > 5) {
-                throw new InsufficientBalanceException(TransferEnum.INSUFFICIENT_BALANCE.getCode(), TransferEnum.INSUFFICIENT_BALANCE.getLabel());
+                throw new InsufficientBalanceException(TransferEnum.INSUFFICIENT_BALANCE.getCode(),
+                        TransferEnum.INSUFFICIENT_BALANCE.getLabel());
             }
         }catch (InsufficientBalanceException e){
             System.out.println(" Exception InsufficientBalanceException occurred "+e);
