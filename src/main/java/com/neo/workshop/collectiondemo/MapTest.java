@@ -7,7 +7,7 @@ public class MapTest {
 
     public static void main(String[] args){
 
-        EmployeService employeService = new EmployeService();
+        /*EmployeService employeService = new EmployeService();
 
         EmployeService employeService2 = employeService;
 
@@ -43,7 +43,7 @@ public class MapTest {
         System.out.println(name.hashCode()+"    name  "+name2.hashCode());
 
 
-
+*/
 
 
 

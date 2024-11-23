@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class EmployeService {
 
-    public void processSalary(Map<String,Employee> employeeMap){
+    public void processSalary(Map<String, EmployeeEntity> employeeMap){
 
     }
 }
