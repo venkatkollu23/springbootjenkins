@@ -1,8 +1,20 @@
 package com.neo.workshop.collectiondemo;
 
 import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class MapDemoTest {
+
+  static   Function<EmployeeEntity,Emp> convert = (input) -> {
+        Emp e = new Emp();
+        e.setEmpId(input.getEmpId());
+        e.setSalary(input.getSalary());
+        e.setName(input.getName());
+
+        return  e;
+
+    };
 
     public static  void main(String[] args){
 
@@ -98,9 +110,15 @@ System.out.println(empCount);
                     return   mapEntry.getValue().isStatus();
                 }).map( myEntry -> {
 
+                    Emp e = new Emp();
+                    e.setEmpId(myEntry.getValue().getEmpId());
+                    e.setSalary(myEntry.getValue().getSalary());
+                    e.setName(myEntry.getValue().getName());
 
-                });
-        System.out.println(activeEmpCount);
+
+                    return  e;
+                }).collect(Collectors.toList());
+        System.out.println(empListForPayroll);
 
                 // flatMap
 
