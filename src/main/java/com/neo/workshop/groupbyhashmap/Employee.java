@@ -8,6 +8,10 @@ public class Employee {
 
     private String dept;
 
+    private Department department;
+
+
+
     public String getEmpId() {
         return empId;
     }

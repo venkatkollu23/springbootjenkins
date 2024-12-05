@@ -7,6 +7,8 @@ import java.util.*;
 public class AverageSalaryLegacyTest {
 
     public static void main(String[] args){
+
+
         List<Employee> itEmpList = new ArrayList<>();
 
         Employee first = new Employee();

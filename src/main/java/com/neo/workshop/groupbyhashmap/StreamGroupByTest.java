@@ -53,6 +53,7 @@ System.out.println("  Employee::getEmpId  " +empIdlist);
 
         System.out.println("   emp -> emp.getEmpId() " +empIdlistWithRef);
 
+       // select dept, avg(salary),min(salary),max(salary),sum(salary)  from sonar.Employee e group by e.dept;
 
         Map<String,List<Employee>> departmentempMap =   itEmpList.stream()
                 .collect(groupingBy( emp -> emp.getDept(), Collectors.toList()));
