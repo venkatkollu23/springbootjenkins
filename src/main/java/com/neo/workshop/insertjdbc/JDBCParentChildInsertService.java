@@ -100,7 +100,7 @@ public class JDBCParentChildInsertService {
             //  insert project into table
             insertProject(project);
 
-
+// Thread.sleep
 
             project.getEmployeeList().forEach( emp -> {
                 // get max of employee
