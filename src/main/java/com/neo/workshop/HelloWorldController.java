@@ -1,4 +1,4 @@
-package com.neo.workshop;
+/*package com.neo.workshop;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,4 +13,4 @@ public class HelloWorldController {
 
         return " CI demo now to demo ci";
     }
-}
+}*/

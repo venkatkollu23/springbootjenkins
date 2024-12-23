@@ -1,3 +1,4 @@
+/*
 package com.neo.workshop.polymorphism.websitedemo;
 
 import ch.qos.logback.core.net.SyslogOutputStream;
@@ -17,3 +18,4 @@ public class BookTicketPage extends AngualrWebsite{
         return "BookTicketPage";
     }
 }
+*/
