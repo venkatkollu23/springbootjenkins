@@ -10,7 +10,6 @@ public class ExternalJavaService {
     ConnectionService connectionService;
 
     public void external(){
-        System.out.println(" external ");
         connectionService.getConnection("abc","abc","abc");
     }
 }

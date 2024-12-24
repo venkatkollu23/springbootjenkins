@@ -17,7 +17,6 @@ public class PayService {
 
 
     public void pay(){
-        System.out.println(" from pay");
         externalJavaService.external();
     }
 }
